@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-base-100 border-b border-base-200 fixed top-0 z-50">
-      <div className="container mx-auto h-full flex justify-between items-center">
+      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-8">
           <Link to="/" className="flex items-center gap-2.5 hover:opacity-80 transition-all">
             <div className="w-9 h-9 rounded-full bg-base-300 flex items-center justify-center">
