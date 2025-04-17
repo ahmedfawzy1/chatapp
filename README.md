@@ -74,16 +74,9 @@ Ensure you have the following installed on your local machine:
 
 4. Set up environment variables:
 
-   Frontend (.env):
-
-   ```
-   VITE_API_URL=http://localhost:3000
-   ```
-
    Backend (.env):
 
    ```
-   FRONTEND_URL=http://localhost:3001
    MONGODB_URL=your_mongodb_connection_string
    PORT=5001
    JWT_SECRET=your_jwt_secret
