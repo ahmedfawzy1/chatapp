@@ -1,0 +1,13 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "This is a modern real-time chat application built using **React**, and **TypeScript**. It features a responsive UI with real-time messaging capabilities, user authentication, and a clean, modern design. The application uses Socket.IO for real-time communication and MongoDB for data persistence.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
