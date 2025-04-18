@@ -29,7 +29,7 @@ interface AuthState {
   disconnectSocket: () => void;
 }
 
-const BASE_URL = import.meta.env.NODE_ENV === "development" ? import.meta.env.VITE_FRONTEND_URL : "/";
+const BASE_URL = import.meta.env.VITE_NODE_ENV === "development" ? "http://localhost:5173" : "/";
 
 export const useAuthStore = create<AuthState>((set, get) => ({
   authUser: null,
@@ -43,12 +43,13 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   checkAuth: async () => {
     try {
       const res = await axiosInstance.get("/auth/check");
-
       set({ authUser: res.data });
       get().connectSocket();
-    } catch (error) {
+    } catch (error: any) {
+      if (error.response?.status !== 401) {
+        console.error("Error checkAuth", error);
+      }
       set({ authUser: null });
-      console.error("Error checkAuth", error);
     } finally {
       set({ isCheckingAuth: false });
     }

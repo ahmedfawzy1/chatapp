@@ -20,7 +20,7 @@ export default function Login() {
   };
 
   return (
-    <section className="bg-base-200">
+    <section className="h-screen bg-base-200">
       <div className="px-6 mx-auto h-[calc(100vh-65px)] flex flex-col items-center justify-center">
         <div className="mb-10">
           <h1 className="text-xl md:text-3xl font-extrabold leading-tight tracking-tight text-base-content">Login to your account</h1>

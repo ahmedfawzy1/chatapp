@@ -74,6 +74,12 @@ Ensure you have the following installed on your local machine:
 
 4. Set up environment variables:
 
+   Frontend (.env):
+
+   ```
+   VITE_NODE_ENV=development
+   ```
+
    Backend (.env):
 
    ```
@@ -101,3 +107,8 @@ Ensure you have the following installed on your local machine:
    cd backend
    npm run dev
    ```
+
+## Live Preview
+
+A live preview of the application is available here:
+[chatApp Demo](https://chatapp-production-5853.up.railway.app)
